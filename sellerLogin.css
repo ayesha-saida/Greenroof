@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-container {
+    text-align: center;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    padding: 40px;
+    margin: 82px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border-color: green;
+    font-size: 18px;
+  }
+  input,
+  #name,
+  #phoneNumber,
+  #email,
+  #password,
+  #confirm_password {
+    border-color: green;
+  }
+  
+  button,
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0086d1;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover,
+  .btn:hover {
+    background-color: #78b8f6;
+  }
+  
+  .btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the info text */
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+  }
+  /* Style for links inside <p> */
+  p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  /* Hover effect for links */
+  p a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  

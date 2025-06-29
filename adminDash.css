@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar nav ul li.active,
+.sidebar nav ul li:hover {
+  background-color: #444;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background-color: #2d2d2d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.tables {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.table-container {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .tables {
+    grid-template-columns: 1fr;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td::before {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  /* Custom labels for each column */
+  .table-container:nth-child(1) td:nth-child(1)::before { content: "Name"; }
+  .table-container:nth-child(1) td:nth-child(2)::before { content: "Email"; }
+  .table-container:nth-child(1) td:nth-child(3)::before { content: "Signup Date"; }
+
+  .table-container:nth-child(2) td:nth-child(1)::before { content: "Name"; }
+  .table-container:nth-child(2) td:nth-child(2)::before { content: "Email"; }
+  .table-container:nth-child(2) td:nth-child(3)::before { content: "Signup Date"; }
+  .table-container:nth-child(2) td:nth-child(4)::before { content: "Products"; }
+
+  .table-container:nth-child(3) td:nth-child(1)::before { content: "User"; }
+  .table-container:nth-child(3) td:nth-child(2)::before { content: "Product"; }
+  .table-container:nth-child(3) td:nth-child(3)::before { content: "Order Date"; }
+  .table-container:nth-child(3) td:nth-child(4)::before { content: "Status"; }
+
+  .table-container:nth-child(4) td:nth-child(1)::before { content: "Product"; }
+  .table-container:nth-child(4) td:nth-child(2)::before { content: "Seller"; }
+  .table-container:nth-child(4) td:nth-child(3)::before { content: "Upload Date"; }
+}

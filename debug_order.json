@@ -1,0 +1,31 @@
+{
+    "address": "House no.25, Road no.03, Block-B, Mirpur 14.",
+    "deliveryTime": "2025-05-25T10:30",
+    "paymentMethod": "Cash on Delivery",
+    "items": [
+        {
+            "name": "Almond",
+            "price": 250,
+            "img": "uploads\/img_682f885bbf6bf5.70851437.jpg",
+            "quantity": 1
+        },
+        {
+            "name": "Beetroot",
+            "price": 60,
+            "img": "uploads\/img_682f922279a6f6.69832952.jpg",
+            "quantity": 1
+        },
+        {
+            "name": "Broccoli",
+            "price": 50,
+            "img": "uploads\/img_682f88334af1d4.27321716.jpg",
+            "quantity": 1
+        },
+        {
+            "name": "Cabbage",
+            "price": 60,
+            "img": "uploads\/img_682f8f852bf760.89672219.jpg",
+            "quantity": 1
+        }
+    ]
+}

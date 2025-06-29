@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How to Buy</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.buy-steps {
+    margin-bottom: 40px;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+.step h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.step img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-info {
+    margin-bottom: 30px;
+}
+
+.payment-info h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.payment-info ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+}
+
+.payment-info ul li {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .step h2 {
+        font-size: 1.5rem;
+    }
+
+    .step p {
+        font-size: 1rem;
+    }
+
+    .payment-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .payment-info ul li {
+        font-size: 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>How to Buy Fresh Vegetables</h1>
+            <p>Follow these simple steps to order your fresh vegetables online. We offer fast delivery right to your door!</p>
+        </header>
+
+        <section class="buy-steps">
+            <div class="step">
+                <h2>Step 1: Browse Our Fresh Vegetables</h2>
+                <p>We have a wide range of fresh vegetables available. Browse through our categories and choose your desired items. Whether you need leafy greens, root vegetables, or fresh herbs, we’ve got you covered!</p>
+                <img src="images/browse-vegetables.jpg" alt="Browse Vegetables" />
+            </div>
+
+            <div class="step">
+                <h2>Step 2: Add to Your Cart</h2>
+                <p>Once you've selected your vegetables, simply add them to your cart. You can adjust the quantity, check for any available discounts, and continue shopping or proceed to checkout.</p>
+                <img src="images/add-to-cart.jpg" alt="Add to Cart" />
+            </div>
+
+            <div class="step">
+                <h2>Step 3: Checkout & Delivery</h2>
+                <p>After selecting your items, head to the checkout page. Fill in your details, including your delivery address and payment information. We offer fast and secure payment options like credit card, debit card, and PayPal.</p>
+                <img src="images/checkout.jpg" alt="Checkout" />
+            </div>
+
+            <div class="step">
+                <h2>Step 4: Receive Your Fresh Vegetables</h2>
+                <p>Your vegetables will be delivered straight to your doorstep within the selected delivery window. Our team ensures that all orders are handled with care to preserve freshness.</p>
+                <img src="images/delivery.jpg" alt="Delivery" />
+            </div>
+        </section>
+
+        <section class="payment-info">
+            <h2>Payment Methods</h2>
+            <p>We accept various payment methods for your convenience:</p>
+            <ul>
+                <li>Credit/Debit Cards</li>
+                <li>PayPal</li>
+                <li>Cash on Delivery (where applicable)</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Need Help?</h2>
+            <p>If you have any questions or need assistance during your order, feel free to <a href="contact-us.html">contact us</a>!</p>
+        </section>
+
+    </div>
+
+    <script>
+// Example JavaScript (Optional)
+
+// This script could be used for things like a smooth scroll or animations when users reach each step, 
+// but for now, let's keep it simple.
+document.addEventListener("DOMContentLoaded", function () {
+    const steps = document.querySelectorAll(".step");
+    steps.forEach((step, index) => {
+        // Optional: Add smooth scroll or animations
+        step.addEventListener("click", function() {
+            alert(`You clicked on step ${index + 1}`);
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
